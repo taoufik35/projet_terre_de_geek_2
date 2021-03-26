@@ -86,10 +86,58 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+  body{
+    width: 100%;
+    height: 100%;
+  }
+  header{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    background-color: red;
+    justify-content: space-between;
+    border-radius: 5px;
+  }
+  .signboard img{
+    height: 40px;
+  }
+  .signboard{
+    display: flex;
+  }
+  header p{
+    display: none;
+  }  
+  header h1{
+    color: #fff;
+    border: none;
+    margin-top: 1px;
+  }
+  ul{
+    display: flex;
+    justify-content: space-between;
+  }
+  ul li {
+    margin-left: 5px;
+    list-style-type: none;
+  }
+  nav a{
+     text-decoration: none;
+  }
 
+  /*-------------------------------------------------titlte page after header---------------------------------*/
+  #title{
+    border: 1px solid black;
+    padding: 2px 2px 2px 2px;
+    text-align: center;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    background-color: black;
+    color: blanchedalmond;
+  }
+  
 /* ==========================================================================
    Helper classes
-   ========================================================================== */
+   ==========================================================================*/
 
 /*
  * Hide visually and from screen readers
