@@ -189,7 +189,144 @@ textarea {
     font-size: 1.3em;
     margin-top: revert;
   }
+  /*-----------------------------------------------------------style home page------------------------------------*/
   
+  .container p{
+    text-align: justify;
+    color: black;
+    border: 1px solid none;
+    width: 300px;
+    display: flex;
+    align-items: center;
+  }
+  .container strong{
+    color: black;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    margin-left: auto
+  }
+  
+  .ordi{
+    width: 10%;
+    background-color: #fff;
+    order: 1;
+    border: 2px solid red;
+    margin-top: 78px;
+    margin-left: 20px;
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  .ordinateur{
+    border: 1px solid black;
+      border-radius: 10px;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 10px; 
+  }
+  .tele{
+    width: 10%;
+    background-color: #fff;
+    order: 1;
+    border: 2px solid red;
+    margin-top: 62px;
+    margin-left: 20px;
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: center;
+  }
+  .television{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;;
+    text-align: center;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .imp{
+    width: 10%;
+    background-color: #fff;
+    order: 1;
+    border: 2px solid red;
+    margin-top: 62px;
+    margin-left: 20px;
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: center;
+  }
+  .imprimante{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    display: flex 
+  }
+  /*.imprimante a {
+    text-decoration: none;
+    color: black ;
+  }
+  .television a {
+    text-decoration: none;
+    color: black ;
+  }
+  .ordinateur a {
+    text-decoration: none;
+    color: black ;
+  }*/
+  .container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .container img{
+    height: 50px;
+  }
+  .para{
+    text-align: center;
+    border: 3px solid none;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1.5em;
+    background-color: #424558;
+    opacity: 0.90;
+    color: black;
+    margin-top: 1em;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  }
+  .paragraphe{
+    margin: 20px auto;
+    width: 60%;
+    padding: 50px;
+    border: 10px solid none;
+    background-image: url("backgound.jpg");
+    border-radius: 10px;
+    margin-top: 3em;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ==========================================================================*/
