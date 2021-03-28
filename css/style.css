@@ -297,7 +297,6 @@ textarea {
     width: 60%;
     padding: 50px;
     border: 10px solid none;
-    background-image: url("backgound.jpg");
     border-radius: 10px;
     margin-top: 3em;
   }
@@ -308,6 +307,22 @@ textarea {
     margin: 12px;
     border: 5px solid black;
     padding: 20px;
+  }
+
+
+  /*--------------------------------------------------------computer page----------------------------------*/
+
+  .formtext p{
+    border: 1px solid black;
+    text-align: justify;
+  }
+  .titletext{
+   text-align: center;
+  }
+  .cara{
+    border: 3px solid black;
+    text-align: center;
+    margin-top: 2em;
   }
 
   /*-----------------------------------------------discover page-------------------------------------------*/
@@ -376,7 +391,23 @@ footer{
   text-decoration: none;
   color: red;
 }
-
+.h2_accueil{
+  border: 2px solid black;
+  background-color: rgba(3, 0, 0, 0.788);
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+.texte_mention strong{
+  border: 1px solid black;
+  background-color: rgba(3, 0, 0, 0.788);
+  color: white;
+ display: flex;
+ justify-content: center;
+  
+  font-size: large;
+}
+/*-----------------------------------------------------other device ------------------------------720px not found--------*/
 @media screen and (min-width: 1024px){
     header{
       display: none;
