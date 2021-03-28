@@ -98,6 +98,11 @@ textarea {
   }
 
   /*--------------------------------------------borderband for mobile-----------------------------------*/
+  
+  .otherDevice{
+    display: none;
+  }
+  
   header{
     width: 100%;
     background-color: white;
@@ -194,14 +199,15 @@ textarea {
     margin-top: 10vh;
   }
   /*-----------------------------------------------------------style home page------------------------------------*/
-  
+  .container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
   .container p{
     text-align: justify;
     color: black;
     border: 1px solid none;
-    width: 300px;
-    display: flex;
-    align-items: center;
   }
   .container strong{
     color: black;
@@ -209,24 +215,13 @@ textarea {
     display: flex;
     align-items: center;
     margin-left: 9vh;
-    order:
+    order:2;
+  } 
+  .container img{
+    height: 10vh;
   }
-  
-  .ordi1{
-    width: 10%;
-    background-color: #fff;
-    order: 1;
-    border: 2px solid red;
-    margin-top: 78px;
-    margin-left: 20px;
-    margin-bottom: 75px;
-    display: flex;
-    justify-content: center;
-  
-  }
-  .ordi{
-    text-align: center;
-  
+  .container a{
+    order: 3;
   }
   .ordinateur{
     border: 1px solid black;
@@ -238,20 +233,6 @@ textarea {
       justify-content: space-around;
       margin-bottom: 10px; 
   }
-  
-  
-  
-  .tele1{
-    width: 10%;
-    background-color: #fff;
-    order: 1;
-    border: 2px solid red;
-    margin-top: 62px;
-    margin-left: 20px;
-    margin-bottom: 75px;
-    display: flex;
-    justify-content: center;
-  }
   .television{
     border: 1px solid black;
     border-radius: 10px;
@@ -259,20 +240,15 @@ textarea {
     background-image: url(backgound.jpg);
     text-align: center;
     display: flex;
+    justify-content: space-around;
     margin-bottom: 10px;
   }
-  
-  .imp1{
-    width: 10%;
-    background-color: #fff;
-    order: 1;
-    border: 2px solid red;
-    margin-top: 62px;
-    margin-left: 20px;
-    margin-bottom: 75px;
-    display: flex;
-    justify-content: center;
+  .television p{
+    order: 2;
   }
+.television a {
+  order: 3;
+}
   .imprimante{
     border: 1px solid black;
     border-radius: 10px;
@@ -280,11 +256,12 @@ textarea {
     background-image: url(backgound.jpg);
     text-align: center;
     display: flex; 
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .imprimante a {
     text-decoration: none;
     color: black ;
+    order: 3;
   }
   .television a {
     text-decoration: none;
@@ -294,19 +271,6 @@ textarea {
     text-decoration: none;
     color: black ;
   }
-  .container{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    
-  }
-  .container img{
-    height: 10vh;
-  }
-  .container a{
-    order: 2;
-  }
-      
   .para p{
     text-align: center;
     border: 3px solid none;
@@ -346,9 +310,160 @@ textarea {
     padding: 20px;
   }
 
+  /*-----------------------------------------------discover page-------------------------------------------*/
 
+  .entreprise img{
+    height: 13vh;
+  }
+.entreprise{
+  text-align: justify;
+}
+  /*---------------------------------------------------table page-------------------------------------------*/
+table{
+  border: 2px solid black;
+  border-collapse: collapse;
+  font-size: 50px;
+  margin-top: 3em;
+}
+td{
+  border: 1px solid black;
+}
+th{
+  border: 1px solid black;
+}
+/*----------------------------------------------footer------------------------------------------------------------*/
+.Mention p{
+  text-align: center;
+  border: 3px solid none;
+  margin-right: 20%;
+  background-color: #424558 ;
+  color: black;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  margin-top: 0.1%;
+  margin-left: 3.5em;
+  font-size: 0.5em;
+}
+.Mention h3{
+  text-align: center;
+  border: 3px solid none;
+  padding: auto;
+  margin-right: 20%;
+  background-color: #424558 ;
+  color: black;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  margin-top: 0.1%;
+  font-size: 1.75em;
+  margin-left: 1em;
+}
+footer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: 30vh;
+}
+.pmention{
+ font-size: 0.5em;
+ margin-bottom: 8em;
+ margin-left: auto;
+}
+.pmention a{
+  text-decoration: none;
+  color: #36c7e0;
+}
+.Mention a{
+  text-decoration: none;
+  color: red;
+}
 
+@media screen and (min-width: 1024px){
+    header{
+      display: none;
+    }
+  .otherDevice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .otherDevice img{
+    text-align: center;
+    margin: 20px;
+    height: 150px;
+  }
+  .headertext p{
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+  margin-top: 5px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .titre h1{
+    font-size: 4em;
+    margin: 0px;
+    padding: 0px;
+    min-width: 0px;
+  }
+  /*--------------------------------------navigation menu--------------------------------*/
 
+  nav{
+    width: 100%;
+    background-color:#424558;
+    border-radius: 10px; 
+  }
+  nav ul{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  nav li{
+    list-style-type: none;
+    float: left;
+    
+  }
+  nav a{
+    display: flex;
+    text-decoration: none;
+    padding:20px 30px ;
+    color:black;
+    font-size: 1em;
+  }
+  ul li a :hover{
+    border-top: 5px solid #36c7e0;
+    background-color: rgba(43, 231, 216, 0.15);
+  }
+
+  
+  }
+  /*.prod1 :hover{
+    border-top: 5px solid #36c7e0;
+    background-color: rgba(43, 231, 216, 0.15);
+  }
+  .prod2 :hover{
+    border-top: 5px solid #36c7e0;
+    background-color: rgba(43, 231, 216, 0.15);
+  }
+  .prod3 :hover{
+    border-top: 5px solid #36c7e0;
+    background-color: rgba(43, 231, 216, 0.15);
+  }
+  .his :hover{
+    border-top: 5px solid #36c7e0;
+    background-color: rgba(43, 231, 216, 0.15);
+  }
+  .ment :hover{
+    border-top: 5px solid #36c7e0;
+    background-color: rgba(43, 231, 216, 0.15);
+  }
+  nav li:hover a{
+    padding: 15px 30px 20px 30px;
+  }
+}*/
 
 
 
