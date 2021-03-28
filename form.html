@@ -1,57 +1,94 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html> 
+<html lang="fr">
+    <head>
+    	<!--en tête de la page-->
+        <meta charset="utf-8" />
+        <link rel="stylesheet"  href="css/style.css">
+        <link rel="shortcut icon" href="img/logo_small.png">
+        <title>Terre de Geek</title>
 
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-
-  <meta name="theme-color" content="#fafafa">
-</head>
+    </head>
 
 <body>
-  <header>
-      <div class ="image"><img src="Terre_de_geek/logo_small.png" alt="logo de l'entreprise" height="150px"></div>
-      <div class="titre"><h1>TERRE DE GEEK</h1></div>
-      <div class= "headertext"><p>Bienvenue à la boutique Terre De Geek<br/>Entreprise familiale leader Normand<br/> 
-      dans le domaine des produits éléctroniques.
-      </p></div>
-    </header><br/>
+    <header>
+      <DIv class="headbands">
+        <div class="signboard">
+          <img src="img/logo_small.png" alt="logo de l'entreprise">
+          <h1>TERRE DE GEEK</h1>
+        </div>
+        <div class="connect">
+          <p class="signIn">SIGN IN</p>
+          <p class="signUp">SIGN UP</p>
+        </div>
+      </DIv>
+      <section>
+          <article> 
+            <h1></h1>BIENVENUE</p>
+            <p>Bienvenue à la boutique Terre De Geek<br/>Entreprise familiale leader Normand<br/> 
+              dans le domaine des produits éléctroniques.
+            </p>
+          </article>
   
   <!----------------------------------------------menu navigation------------------------------------------->
     <nav>
-      <div class="table">
         <ul>
-          <li class="acc"><a href="index.html">Accueil</a></li>
-          <li class="prod1"><a href="product_comp.html"> Ordinateur</a></li>
-          <li class="prod2"><a href="product_printer.html"> Imprimante</a></li>
-          <li class="prod3"><a href="product_tele.html"> Télévision 4K</a></li>
-          <li class="serv"><a href="service_page.html">Nos services</a></li>
-          <li class="his"><a href="history_page.html">  Nous découvrir</a></li>
-          <li class="ment"><a href="legal_mention.html"> Mentions legales</a></li>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="product_comp.html"> Ordinateur</a></li>
+          <li><a href="product_printer.html"> Imprimante</a></li>
+          <li><a href="product_tele.html"> Télévision 4K</a></li>
+          <li><a href="service_page.html">Nos services</a></li>
+          <li><a href="history_page.html">  Nous découvrir</a></li>
+          <li><a href="legal_mention.html"> Mentions legales</a></li>
         </ul>
-      </div>
     </nav>
   
 
         
 
       
-  <!--------------------------------presentation product select--------------------------------------------------->
+  <!--------------------------------forme contact--------------------------------------------------->
+      <form method="POST">
+        <fieldset>
+          <legend>Vos coordonnées</legend>
+        <label for="Nom">Nom</label><br/>
+        <input type="text" name="Nom" id="Nom" minlength="2" maxlength="40" placeholder="Dupont" required/><br/>
 
+        <label for="Prenom">prenom</label><br/>
+        <input type="text" name="Prenom" id="Nom" minlength="2" maxlength="40" placeholder="Richard" required/><br/>
+
+        <label for="age">Age</label><br/>
+        <input type="number" name="age" id="Nom"  maxlength="2" placeholder="18"/><br/>
+
+        <label for="Telephone">Numéro de Télephone</label><br/>
+        <input type="tel" name="Telephone" id="Telephone" minlength="2" maxlength="10" placeholder="02354175488" required><br/>
+
+        <label for="email">Email</label><br/>
+        <input type="email" name="email" id="email"  placeholder="abs@gmail.com" required/><br/>
+
+        
+        </fieldset>
+
+        <fieldset>
+                <legend>Contact</legend>
+                <label for="objet_de_contact">Objet du contact</label><br />
+                <select name="contacte" id="objet_de_contact" required>
+                    <option value=""></option>
+                    <option value="information">Information</option>
+                    <option value="reclamation">reclamation</option>
+                    <option value="partenariat">Partenariat</option>
+                    <option value="autre">Autre</option>
+                </select><br/>
+                <p>
+                    <legend> Description</legend>
+                  <textarea name="description" id="descrpition" rows="10" cols="50">
+
+                  </textarea>
+                </p>
+                <input type="submit" value="Envoyer">       
+        </fieldset>
+
+
+      </form>
     
 
 
@@ -78,20 +115,6 @@
         <a href="mailto:voutib@gmail.com">Nous contacter</a>
         </p>
       </div>
-   
-
-  <!-- Add your site or application content here -->
-  
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
