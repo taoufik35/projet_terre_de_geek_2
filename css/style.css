@@ -209,6 +209,7 @@ textarea {
     display: flex;
     align-items: center;
     margin-left: 9vh;
+    order:
   }
   
   .ordi1{
@@ -299,6 +300,12 @@ textarea {
     flex-direction: column;
     
   }
+  .container img{
+    height: 10vh;
+  }
+  .container a{
+    order: 2;
+  }
       
   .para p{
     text-align: center;
@@ -330,9 +337,14 @@ textarea {
     border-radius: 10px;
     margin-top: 3em;
   }
+  
+  /*-------------------------------------------form page---------------------------------------------------*/
 
-
-
+  fieldset{
+    margin: 12px;
+    border: 5px solid black;
+    padding: 20px;
+  }
 
 
 
